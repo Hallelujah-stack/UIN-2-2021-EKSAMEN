@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import DefaultLayout from '../layouts/DefaultLayout';
-import Home from '../pages/Home';
+import Forside from '../pages/Forside';
 
 /**
  * Her har jeg laget en "rute" til "/" og bruker Home komponenten i pages mappen
@@ -11,7 +11,7 @@ const Routes = () => (
     <DefaultLayout>
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Forside />
         </Route>
       </Switch>
     </DefaultLayout>
