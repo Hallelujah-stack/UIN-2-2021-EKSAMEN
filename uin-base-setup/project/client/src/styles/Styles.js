@@ -28,6 +28,6 @@ export const TitleH1 = styled.section`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 5px;
+  padding: 10px;
   font-family: Arial, sans-serif;
 `;

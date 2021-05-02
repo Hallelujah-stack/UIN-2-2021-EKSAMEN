@@ -26,6 +26,7 @@ export const secondService = async () => {
 };
 
 export const firstServiceWithParam = async (slug) => {
-  const data = await client.fetch(`*[_type == "ADD_YOUR_TYPE_HERE"]{${anotherFields}}`, { slug });
-  return data?.[0];
+  const data = await client.fetch(`*[_type == "ADD_YOUR_TYPE_HERE"]{${anotherFields}}`, { slug }
+  );
+  return data?.[0]
 };
