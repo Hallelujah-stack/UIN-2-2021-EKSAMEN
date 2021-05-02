@@ -23,4 +23,20 @@ const Forside = () => (
   </>
 );
 
+const Forside = () => (
+  <>
+    <Container>
+      <TitleH1>
+        <h1>Aktuelle nyheter</h1>
+      </TitleH1>
+      <ScreenStyle>
+        <Screen />
+      </ScreenStyle>
+      <Cards>
+        <Card />
+      </Cards>
+    </Container>
+  </>
+);
+
 export default Forside;
