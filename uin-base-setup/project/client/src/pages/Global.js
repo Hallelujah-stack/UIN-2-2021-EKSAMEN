@@ -4,9 +4,9 @@ import Cards from '../components/Cards';
 import Lead from '../components/Lead';
 import Title from '../components/Title';
 import { Container } from '../styles/Styles';
-import { getPage } from '../utils/pageService';
+import { getArticle } from '../utils/articleService';
 
-const Trainings = () => {
+const listCards = () => {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -15,8 +15,8 @@ const Trainings = () => {
       const fetchDataAsync = async () => {
         setLoading(true);
         try {
-          const page = await getPage('trening');
-          setData(page);
+          const Global = await getArticle('global');
+          setData(Global);
         } catch (error) {
           setError(error);
         } finally {
@@ -41,4 +41,4 @@ const Trainings = () => {
     );
   };
   
-  export default Trainings;
+  export default listCards;
