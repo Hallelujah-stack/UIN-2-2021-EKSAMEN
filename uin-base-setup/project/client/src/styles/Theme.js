@@ -1,9 +1,11 @@
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './Global';
 
-// Her må du legge til egne verdier
 const theme = {
-  variable: 'value',
+  nav: {
+    background: '#0d2134',
+    link: '#ffffff',
+  },
   breakpoints: {
     large: '1200px',
     medium: '992px',

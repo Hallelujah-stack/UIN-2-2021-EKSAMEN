@@ -17,15 +17,17 @@ export const Container = styled.section`
 `;
 
 export const ScreenStyle = styled.section`
-  padding: 175px;
-  margin: 50px;
-  border: 5px solid black;
+  padding: 150px;
+  margin: 25px;
+  border: 3px solid rgb(220, 220, 220);
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(255, 245, 238);
 `;
 export const TitleH1 = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
   font-family: Arial, sans-serif;
 `;

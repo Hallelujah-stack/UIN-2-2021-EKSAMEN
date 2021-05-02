@@ -1,4 +1,4 @@
-import styled from "styled-components/macro";
+import styled from 'styled-components/macro';
 
 const StyledLead = styled.p`
 text-align: center;
@@ -8,6 +8,6 @@ line-height: 1.5;
 margin-bottom: 2rem;
 `;
 
-const Lead = ({lead}) => <StyledLead>{lead}</StyledLead>;
+const Lead = ({ lead }) => <StyledLead>{lead}</StyledLead>;
 
 export default Lead;
