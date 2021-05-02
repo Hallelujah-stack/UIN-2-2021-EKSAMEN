@@ -25,6 +25,11 @@ const article = {
             name:'lead',
             title: 'Ledetekst',
             type: 'text'
+        },
+        {
+            name: 'cards',
+            title: 'Cards',
+            type: 'cards'
         }
     ]
 }
