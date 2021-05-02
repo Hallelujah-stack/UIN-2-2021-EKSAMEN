@@ -3,9 +3,11 @@
 
 import client from './client';
 
-const fields = `
-  add_your_fields_here
-`
+const articleFields = `
+  title,
+  'slug': slug.current,
+  'category': category->title,
+`;
 
 const otherFields = `
   add_your_fields_here
@@ -16,7 +18,7 @@ const anotherFields = `
 `
 
 export const firstService = async () => {
-  const data = await client.fetch(`*[_type == "ADD_YOUR_TYPE_HERE"]{${fields}}`);
+  const data = await client.fetch(`*[_type == "article"]{${articleFields}}`);
   return data;
 };
 
@@ -26,7 +28,6 @@ export const secondService = async () => {
 };
 
 export const firstServiceWithParam = async (slug) => {
-  const data = await client.fetch(`*[_type == "ADD_YOUR_TYPE_HERE"]{${anotherFields}}`, { slug }
-  );
-  return data?.[0]
+  const data = await client.fetch(`*[_type == "slug" && slug.current == $slug]{${anotherFields}}`, { slug });
+  return data?.[0];
 };

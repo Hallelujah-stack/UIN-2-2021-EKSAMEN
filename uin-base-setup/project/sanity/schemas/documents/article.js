@@ -20,6 +20,11 @@ const article = {
             name: 'category',
             type: 'reference',
             to: [{type: 'category'}],
+        },
+        {
+            name:'lead',
+            title: 'Ledetekst',
+            type: 'text'
         }
     ]
 }
