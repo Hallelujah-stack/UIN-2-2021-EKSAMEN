@@ -5,7 +5,7 @@ const articleFields = `
   slug,
   category
 `;
-export const firstServiceWithParam = async (slug) => {
+export const getArticle = async (slug) => {
     const data = await client.fetch(`*[_type == "article"]{${articleFields}}`, { slug });
     return data?.[0];
   };
