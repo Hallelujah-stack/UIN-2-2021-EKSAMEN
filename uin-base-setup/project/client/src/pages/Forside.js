@@ -8,7 +8,7 @@ import Lead from '../components/Lead';
 import Title from '../components/Title';
 import { getArticle } from '../utils/articleService';
 
-const listCards = () => {
+const Forside = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -31,7 +31,7 @@ const listCards = () => {
   if (loading) return <p>Loading ...</p>;
   if (!data && error) return <p>{error?.message}</p>;
 
-const Forside = () => (
+return (
   <>
     <Container>
       <TitleH1>
@@ -49,6 +49,6 @@ const Forside = () => (
     </Container>
   </>
 );
+};
 
 export default Forside;
-
