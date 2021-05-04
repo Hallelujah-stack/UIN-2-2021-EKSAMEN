@@ -15,6 +15,10 @@ const navItems = [
     href: '/Sport',
   },
   {
+    name: 'VG-Tv',
+    href: '/Tv',
+  },
+  {
     name: 'Kontakt Oss',
     href: '/Kontakt',
   },

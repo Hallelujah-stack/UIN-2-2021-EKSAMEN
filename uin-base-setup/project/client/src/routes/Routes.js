@@ -5,6 +5,7 @@ import Forside from '../pages/Forside';
 import GlobalN from '../pages/Global';
 import NorgeN from '../pages/Norge';
 import SportN from '../pages/Sport';
+import Vgtv from '../pages/VGTV';
 
 const Routes = () => (
   <Router>
@@ -22,6 +23,9 @@ const Routes = () => (
         </Route>
         <Route exact path="/Sport">
           <SportN />
+          <Route exact path="/Tv">
+          <Vgtv />
+        </Route>
         </Route>
       </Switch>
     </DefaultLayout>
