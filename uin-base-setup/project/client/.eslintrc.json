@@ -5,6 +5,7 @@
     }
   },
   "root": true,
+  "parser": "babel-eslint",
   "extends": ["airbnb", "prettier"],
   "plugins": ["html", "prettier", "react-hooks", "@babel"],
   "rules": {

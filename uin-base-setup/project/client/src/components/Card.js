@@ -26,7 +26,7 @@ const StyledCardContent = styled.section`
 `;
 
 const StyledCardH2 = styled.h2`
-  color: #fff;
+  color: black;
   font-size: 1.5rem;
   font-weight: 900;
 `;
@@ -39,7 +39,7 @@ const StyledCardLink = styled.a`
   display: inline-block;
   text-align: center;
   padding: 0.6rem 0.9rem;
-  color: #fff;
+  color: black;
   border: 1px solid #fff;
   text-transform: none;
   font-weight: 900;
@@ -59,7 +59,7 @@ const StyledCardLink = styled.a`
 const StyledCardText = styled.p`
   font-size: 1.2rem;
   line-height: 2.4rem;
-  color: #fff;
+  color: black;
 `;
 
 const Card = ({ img, title, text, link }) => (

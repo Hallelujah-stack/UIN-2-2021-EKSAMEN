@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, ScreenStyle, TitleH1 } from '../styles/Styles';
 import Screen from '../components/Screen';
 import Cards from '../components/Cards';
@@ -17,8 +16,8 @@ const Forside = () => {
     const fetchDataAsync = async () => {
       setLoading(true);
       try {
-        const Global = await getArticle('global');
-        setData(Global);
+        const Home = await getArticle('sport');
+        setData(Home);
       } catch (error) {
         setError(error);
       } finally {
@@ -31,24 +30,25 @@ const Forside = () => {
   if (loading) return <p>Loading ...</p>;
   if (!data && error) return <p>{error?.message}</p>;
 
-return (
-  <>
-    <Container>
-      <TitleH1>
-        <h1>Aktuelle nyheter</h1>
-      </TitleH1>
-      <ScreenStyle>
-        <Screen />
-      </ScreenStyle>
-      <Title title={data?.title} />
+  return (
+    <>
+      <Container>
+        <TitleH1>
+          <h1>Aktuelle nyheter</h1>
+        </TitleH1>
+        <ScreenStyle>
+          <Screen />
+        </ScreenStyle>
+        <Title title={data?.title} />
         <Lead lead={data?.lead} />
         <Cards>
           {data?.cards?.length > 0 &&
+            // eslint-disable-next-line react/jsx-props-no-spreading
             data.cards.map((card) => <Card key={card._key} {...card} />)}
         </Cards>
-    </Container>
-  </>
-);
+      </Container>
+    </>
+  );
 };
 
 export default Forside;

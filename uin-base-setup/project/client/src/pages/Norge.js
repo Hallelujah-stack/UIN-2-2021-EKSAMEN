@@ -6,7 +6,7 @@ import Title from '../components/Title';
 import { Container } from '../styles/Styles';
 import { getArticle } from '../utils/articleService';
 
-const GlobalN = () => {
+const NorgeN = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -15,8 +15,8 @@ const GlobalN = () => {
     const fetchDataAsync = async () => {
       setLoading(true);
       try {
-        const Global = await getArticle('globale-nyheter');
-        setData(Global);
+        const Norge = await getArticle('nasjonale-nyheter');
+        setData(Norge);
       } catch (error) {
         setError(error);
       } finally {
@@ -41,4 +41,4 @@ const GlobalN = () => {
   );
 };
 
-export default GlobalN;
+export default NorgeN;

@@ -3,8 +3,8 @@ import { GlobalStyles } from './Global';
 
 const theme = {
   nav: {
-    background: '#0d2134',
-    link: '#ffffff',
+    background: 'white',
+    link: 'black',
   },
   breakpoints: {
     large: '1200px',
