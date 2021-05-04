@@ -15,7 +15,7 @@ const Vgtv = () => {
     const fetchDataAsync = async () => {
       setLoading(true);
       try {
-        const Global = await getArticle('VG-TV');
+        const Global = await getArticle('vgtv');
         setData(Global);
       } catch (error) {
         setError(error);

@@ -59,6 +59,11 @@ width: 130px;
 padding-left 5px;
 `;
 
+const StyledInput = styled.input`
+border-radius: 5px;
+margin-left: 50px;
+`;
+
 const Navigation = () => (
   <StyledNav>
     <NavLink to="/">
@@ -68,6 +73,7 @@ const Navigation = () => (
         height="35px"
       />
     </NavLink>
+    <StyledInput type="text" />
     <StyledNavUl>
       {navItems.map((navItem) => (
         <StyledNavLi key={navItem.name}>
