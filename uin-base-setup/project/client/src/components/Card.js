@@ -2,14 +2,14 @@ import styled from 'styled-components/macro';
 
 const StyledArticle = styled.article`
   display: block;
+  position: relative;
   margin: 0;
   width: 100%;
-  height: auto;
   z-index: 2;
+  padding: 2rem 3rem;
   overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
   border-radius: 0;
-  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 `;
 
 const StyledCardContent = styled.section`
@@ -26,40 +26,28 @@ const StyledCardContent = styled.section`
 `;
 
 const StyledCardH2 = styled.h2`
-  color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
   font-weight: 900;
+  margin-bottom: 1.6rem;
+  color: black;
 `;
 
 const StyledCardImage = styled.img`
   max-width: 100%;
+  padding: 10px;
+  margin: 0;
 `;
 
 const StyledCardLink = styled.a`
-  display: inline-block;
-  text-align: center;
-  padding: 0.6rem 0.9rem;
-  color: #fff;
-  border: 1px solid #fff;
-  text-transform: none;
-  font-weight: 900;
-  padding: 0.5rem 1rem;
-  min-width: 54px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-style: italic;
-  margin-top: 1.5rem;
-  transition: all 300ms ease-in-out;
-  &:hover {
-    background-color: #fff;
-    color: #333;
-  }
+  font-size: 1.3rem;
+  color: black;
 `;
 
 const StyledCardText = styled.p`
   font-size: 1.2rem;
   line-height: 2.4rem;
-  color: #fff;
+  color: black;
 `;
 
 const Card = ({ img, title, text, link }) => (
