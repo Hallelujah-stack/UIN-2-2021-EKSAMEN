@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ContactForm from '../components/KontaktOss';
 import Navigation from '../components/Navigation';
 import DefaultLayout from '../layouts/DefaultLayout';
 import Forside from '../pages/Forside';
@@ -22,6 +23,9 @@ const Routes = () => (
         </Route>
         <Route exact path="/Sport">
           <SportN />
+        </Route>
+        <Route exact path="/Kontakt">
+          <ContactForm />
         </Route>
       </Switch>
     </DefaultLayout>
