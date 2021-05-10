@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import sanityClient from '../utils/client';
 import { Container, ScreenStyle, TitleH1 } from '../styles/Styles';
 import Screen from '../components/Screen';
 import Cards from '../components/Cards';
@@ -44,7 +43,6 @@ const Forside = () => {
         <Lead lead={data?.lead} />
         <Cards>
           {data?.cards?.length > 0 &&
-            // eslint-disable-next-line react/jsx-props-no-spreading
             data.cards.map((card) => <Card key={card._key} {...card} />)}
         </Cards>
       </Container>
