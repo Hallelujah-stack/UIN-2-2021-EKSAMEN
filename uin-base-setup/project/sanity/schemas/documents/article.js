@@ -5,7 +5,7 @@ const article = {
     fields: [
         {
             title: 'Tittel',
-            name: 'tittel',
+            name: 'title',
             type: 'string',
             description: 'This is what had happened',
         },

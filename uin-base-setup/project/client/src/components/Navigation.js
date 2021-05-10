@@ -16,7 +16,7 @@ const navItems = [
   },
   {
     name: 'VG-Tv',
-    href: '/Tv',
+    href: '/VGTV',
   },
   {
     name: 'Kontakt Oss',
