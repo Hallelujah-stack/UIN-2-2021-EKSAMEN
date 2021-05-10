@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import sanityClient from '../utils/client';
 import { Container, ScreenStyle, TitleH1 } from '../styles/Styles';
 import Screen from '../components/Screen';
 import Cards from '../components/Cards';
