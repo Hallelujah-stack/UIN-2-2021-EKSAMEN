@@ -23,7 +23,12 @@ const card = {
             title: 'Linker',
             type: 'array',
             of: [{type:'link'}]
-        }
+        },
+        {
+            name: 'body',
+            type: 'content',
+            title: 'innhold'
+        },
             
     ],
 };

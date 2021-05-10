@@ -16,6 +16,11 @@ const article = {
             description: 'This is the slug',
         },
         {
+            name: 'body',
+            type: 'content',
+            title: 'innhold'
+        },
+        {
             title: 'Kategori',
             name: 'category',
             type: 'reference',

@@ -8,7 +8,7 @@ import category from './documents/category'
 import card from './objects/card'
 import link from './objects/link'
 import cards from './objects/cards'
-import contact from './documents/contact'
+import content from './objects/content'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,6 +22,6 @@ export default createSchema({
     card,
     link,
     cards,
-    contact
+    content
   ]),
 })
