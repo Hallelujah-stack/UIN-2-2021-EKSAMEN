@@ -13,10 +13,6 @@ const otherFields = `
   add_your_fields_here
 `
 
-const anotherFields = `
-  add_your_fields_here
-`
-
 export const firstService = async () => {
   const data = await client.fetch(`*[_type == "article"]{${articleFields}}`);
   return data;
@@ -28,6 +24,9 @@ export const secondService = async () => {
 };
 
 export const firstServiceWithParam = async (slug) => {
-  const data = await client.fetch(`*[_type == "slug" && slug.current == $slug]{${anotherFields}}`, { slug });
+  const data = await client.fetch(
+    `*[_type == "article" && slug.current == $slug]{${articleFields}}`,
+    { slug }
+  );
   return data?.[0];
 };

@@ -35,6 +35,15 @@ const article = {
             name: 'cards',
             title: 'Cards',
             type: 'cards'
+        },
+        {
+            name: 'image',
+            title: 'Image',
+            type: 'image',
+            options: {
+                hotspot: true
+            }
+
         }
     ]
 }

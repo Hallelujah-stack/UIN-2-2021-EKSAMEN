@@ -27,6 +27,9 @@ const Routes = () => (
         <Route exact path="/Kontakt">
           <ContactForm />
         </Route>
+        <Route exact path="/Kontakt">
+          <ContactForm />
+        </Route>
       </Switch>
     </DefaultLayout>
   </Router>
