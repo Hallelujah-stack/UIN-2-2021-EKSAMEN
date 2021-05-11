@@ -8,6 +8,7 @@ const StyledGrid = styled.section`
 `;
 
 const Cards = ({ children, ...props }) => (
+  // eslint-disable-next-line react/jsx-props-no-spreading
   <StyledGrid {...props}>{children}</StyledGrid>
 );
 
