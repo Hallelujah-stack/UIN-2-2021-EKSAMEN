@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Container } from '../styles/Styles';
 import Cards from '../components/Cards';
 import Card from '../components/Card';
@@ -6,7 +7,10 @@ import Lead from '../components/Lead';
 import Title from '../components/Title';
 import { getArticle } from '../utils/articleService';
 
+
 const VgtvN = () => {
+  const {pathname} = useLocation();
+  const slug = pathname.split('/');
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -15,7 +19,7 @@ const VgtvN = () => {
     const fetchDataAsync = async () => {
       setLoading(true);
       try {
-        const Vgtv = await getArticle('Tv');
+        const Vgtv = await getArticle(slug[1] || '');
         setData(Vgtv);
       } catch (error) {
         setError(error);

@@ -20,7 +20,7 @@ const EventPreAmble = styled(EventHeading)`
   font-weight: 400;
 `;
 
-const StyledCardLink = styled(Link)`
+const StyledCardLink = styled.a`
   font-size: 1.3rem;
   color: black;
 `;
