@@ -19,7 +19,7 @@ const card = {
             type: 'image'
         },
         {
-            name: 'Link',
+            name: 'link',
             title: 'Linker',
             type: 'array',
             of: [{type:'link'}]
