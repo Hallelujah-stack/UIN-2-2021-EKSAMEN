@@ -6,6 +6,7 @@ import Forside from '../pages/Forside';
 import GlobalN from '../pages/Global';
 import NorgeN from '../pages/Norge';
 import SportN from '../pages/Sport';
+import VgtvN from '../pages/Vgtv';
 
 const Routes = () => (
   <Router>
@@ -20,6 +21,9 @@ const Routes = () => (
         </Route>
         <Route exact path="/Nasjonal">
           <NorgeN />
+        </Route>
+        <Route exact path="/VGTV">
+          <VgtvN />
         </Route>
         <Route exact path="/Sport">
           <SportN />

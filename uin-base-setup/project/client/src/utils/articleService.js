@@ -3,6 +3,7 @@ import client from './client';
 const articleFields = `
 title,
 'slug': slug.current,
+lead,
 'category': category->title,
 'cards': cards[]{_key, title, text, 'link': link[]{_key, name, href}, 'img': image{..., asset->{url}}}
 `;
