@@ -9,6 +9,7 @@ import card from './objects/card'
 import link from './objects/link'
 import cards from './objects/cards'
 import content from './objects/content'
+import contact from './documents/contact'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,6 +23,7 @@ export default createSchema({
     card,
     link,
     cards,
-    content
+    content, 
+    contact
   ]),
 })

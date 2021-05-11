@@ -6,7 +6,8 @@ import Forside from '../pages/Forside';
 import GlobalN from '../pages/Global';
 import NorgeN from '../pages/Norge';
 import SportN from '../pages/Sport';
-import VgtvN from '../pages/Vgtv';
+import VgtvN from '../pages/VGTV';
+import ArtikkelSide from '../pages/ArtikkelSide';
 
 const Routes = () => (
   <Router>

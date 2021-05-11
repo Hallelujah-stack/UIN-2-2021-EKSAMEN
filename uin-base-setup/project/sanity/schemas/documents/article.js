@@ -42,9 +42,8 @@ const article = {
             type: 'image',
             options: {
                 hotspot: true
-            }
-
         },
+    }
     ]
 }
 

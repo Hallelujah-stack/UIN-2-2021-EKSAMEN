@@ -1,11 +1,14 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 
-const StyledCards = styled.section`
+const StyledGrid = styled.section`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: ${({ columns }) => columns || 'repeat(3, 1fr)'};
+  gap: ${({ gap }) => gap || '20px'};
+  ${({ children, ...props }) => props};
 `;
 
-const Cards = ({ children }) => <StyledCards>{children}</StyledCards>;
+const Cards = ({ children, ...props }) => (
+  <StyledGrid {...props}>{children}</StyledGrid>
+);
 
 export default Cards;
