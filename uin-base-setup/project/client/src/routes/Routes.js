@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import ContactForm from '../components/KontaktOss';
+import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import DefaultLayout from '../layouts/DefaultLayout';
 import Forside from '../pages/Forside';
 import GlobalN from '../pages/Global';
 import NorgeN from '../pages/Norge';
 import SportN from '../pages/Sport';
+import VgtvN from '../pages/Vgtv';
 
 const Routes = () => (
   <Router>
@@ -21,14 +22,11 @@ const Routes = () => (
         <Route exact path="/Nasjonal">
           <NorgeN />
         </Route>
+        <Route exact path="/VGTV">
+          <VgtvN />
+        </Route>
         <Route exact path="/Sport">
           <SportN />
-        </Route>
-        <Route exact path="/Kontakt">
-          <ContactForm />
-        </Route>
-        <Route exact path="/Kontakt">
-          <ContactForm />
         </Route>
       </Switch>
     </DefaultLayout>
