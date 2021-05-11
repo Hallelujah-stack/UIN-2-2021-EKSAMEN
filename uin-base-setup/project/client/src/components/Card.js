@@ -1,31 +1,13 @@
-import styled from 'styled-components/macro';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-const StyledArticle = styled.article`
-  display: block;
-  position: relative;
-  margin: 0;
-  width: 100%;
-  z-index: 2;
-  padding: 2rem 3rem;
-  overflow: hidden;
-  border-radius: 0;
+const EventContainer = styled.article`
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 100%;
 `;
 
-const StyledCardContent = styled.section`
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  right: 0;
-  background-color: ${({ theme }) => theme.nav.background};
-  padding: 1rem;
-  transition: all 300ms ease-in-out;
-  &:hover {
-    bottom: 0;
-  }
-`;
-
-const StyledCardH2 = styled.h2`
+const EventHeading = styled.h2`
   font-size: 1.8rem;
   line-height: 1.2;
   font-weight: 900;
@@ -33,15 +15,18 @@ const StyledCardH2 = styled.h2`
   color: black;
 `;
 
-const StyledCardImage = styled.img`
-  max-width: 100%;
-  padding: 10px;
-  margin: 0;
+const EventPreAmble = styled(EventHeading)`
+  font-size: 1.3rem;
+  font-weight: 400;
 `;
 
-const StyledCardLink = styled.a`
+const StyledCardLink = styled(Link)`
   font-size: 1.3rem;
   color: black;
+`;
+
+const StyledCardImage = styled.img`
+  max-width: 100%;
 `;
 
 const StyledCardText = styled.p`
@@ -50,19 +35,19 @@ const StyledCardText = styled.p`
   color: black;
 `;
 
-const Card = ({ img, title, text, link }) => (
-  <StyledArticle>
+const EventItem = ({ preAmble, img, title, text, link }) => (
+  <EventContainer>
+    <EventHeading>{title}</EventHeading>
     <StyledCardImage src={img?.asset?.url} alt={img?.alt} />
-    <StyledCardContent>
-      <StyledCardH2>{title}</StyledCardH2>
-      <StyledCardText>{text}</StyledCardText>
-      {link?.length > 0 &&
-        link.map((l) => (
-          <StyledCardLink key={l?._key} href={l?.href}>
-            {l?.name}
-          </StyledCardLink>
-        ))}
-    </StyledCardContent>
-  </StyledArticle>
+    <StyledCardText>{text}</StyledCardText>
+    <EventPreAmble>{preAmble}</EventPreAmble>
+    {link?.length > 0 &&
+      link.map((l) => (
+        <StyledCardLink key={l?._key} href={l?.href}>
+          {l?.name}
+        </StyledCardLink>
+      ))}
+  </EventContainer>
 );
-export default Card;
+
+export default EventItem;

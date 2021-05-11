@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Footer from '../components/Footer';
+import Contact from '../pages/Kontakt';
 import Navigation from '../components/Navigation';
 import DefaultLayout from '../layouts/DefaultLayout';
 import ArtikkelSide from '../pages/ArtikkelSide';
@@ -7,7 +7,8 @@ import Forside from '../pages/Forside';
 import GlobalN from '../pages/Global';
 import NorgeN from '../pages/Norge';
 import SportN from '../pages/Sport';
-import VgtvN from '../pages/Vgtv';
+import VgtvN from '../pages/VGTV';
+import ArtikkelSide from '../pages/ArtikkelSide';
 
 const Routes = () => (
   <Router>
@@ -28,6 +29,15 @@ const Routes = () => (
         </Route>
         <Route exact path="/Sport">
           <SportN />
+        </Route>
+        <Route exact path="/Kontakt">
+          <Contact />
+        </Route>
+        <Route exact path="/Article/:slug">
+          <ArtikkelSide />
+        </Route>
+        <Route exact path="/Kontakt">
+          <ContactForm />
         </Route>
       </Switch>
     </DefaultLayout>

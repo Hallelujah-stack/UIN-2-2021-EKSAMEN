@@ -16,6 +16,11 @@ const article = {
             description: 'This is the slug',
         },
         {
+            name: 'body',
+            type: 'content',
+            title: 'innhold'
+        },
+        {
             title: 'Kategori',
             name: 'category',
             type: 'reference',
@@ -30,7 +35,15 @@ const article = {
             name: 'cards',
             title: 'Cards',
             type: 'cards'
-        }
+        },
+        {
+            name: 'image',
+            title: 'Image',
+            type: 'image',
+            options: {
+                hotspot: true
+        },
+    }
     ]
 }
 

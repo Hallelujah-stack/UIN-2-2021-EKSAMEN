@@ -60,8 +60,8 @@ padding-left 5px;
 `;
 
 const StyledInput = styled.input`
-border-radius: 5px;
-margin-left: 50px;
+  border-radius: 5px;
+  margin-left: 50px;
 `;
 
 const Navigation = () => (
