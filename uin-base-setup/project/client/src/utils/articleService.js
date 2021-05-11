@@ -8,10 +8,10 @@ lead,
 'cards': cards[]{_key, title, text, 'link': link[]{_key, name, href}, 'img': image{..., asset->{url}}}
 `;
 
-//export const firstService = async () => {
- // const data = await client.fetch(`*[_type == "article"]{${articleFields}}`);
- // return data;
-//};
+// export const firstService = async () => {
+// const data = await client.fetch(`*[_type == "article"]{${articleFields}}`);
+// return data;
+// };
 
 export const getArticle = async (slug) => {
   const data = await client.fetch(
