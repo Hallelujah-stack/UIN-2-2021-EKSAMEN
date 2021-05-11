@@ -36,7 +36,7 @@ const Routes = () => (
           <ArtikkelSide />
         </Route>
         <Route exact path="/Kontakt">
-          <ContactForm />
+          <Contact />
         </Route>
       </Switch>
     </DefaultLayout>
