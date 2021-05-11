@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, ScreenStyle, TitleH1 } from '../styles/Styles';
+import { Container, ScreenStyle } from '../styles/Styles';
 import Screen from '../components/Screen';
 import Cards from '../components/Cards';
 import Card from '../components/Card';
@@ -33,13 +33,10 @@ const Forside = () => {
   return (
     <>
       <Container>
-        <TitleH1>
-          <h1>Aktuelle nyheter</h1>
-        </TitleH1>
+        <Title title={data?.title} />
         <ScreenStyle>
           <Screen />
         </ScreenStyle>
-        <Title title={data?.title} />
         <Lead lead={data?.lead} />
         <Cards>
           {data?.cards?.length > 0 &&

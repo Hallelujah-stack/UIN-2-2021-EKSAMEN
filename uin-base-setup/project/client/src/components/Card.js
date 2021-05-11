@@ -20,7 +20,7 @@ const EventPreAmble = styled(EventHeading)`
   font-weight: 400;
 `;
 
-const StyledLink = styled(Link)`
+const StyledCardLink = styled(Link)`
   font-size: 1.3rem;
   color: black;
 `;
@@ -35,13 +35,18 @@ const StyledCardText = styled.p`
   color: black;
 `;
 
-const EventItem = ({ preAmble, slug, img, title, text }) => (
+const EventItem = ({ preAmble, img, title, text, link }) => (
   <EventContainer>
     <EventHeading>{title}</EventHeading>
     <StyledCardImage src={img?.asset?.url} alt={img?.alt} />
     <StyledCardText>{text}</StyledCardText>
     <EventPreAmble>{preAmble}</EventPreAmble>
-    <StyledLink to={`/article/${slug}`}>Gå til artikkel</StyledLink>
+    {link?.length > 0 &&
+      link.map((l) => (
+        <StyledCardLink key={l?._key} href={l?.href}>
+          {l?.name}
+        </StyledCardLink>
+      ))}
   </EventContainer>
 );
 
