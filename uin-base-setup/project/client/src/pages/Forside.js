@@ -15,6 +15,7 @@ const Forside = () => {
   useEffect(() => {
     const fetchDataAsync = async () => {
       setLoading(true);
+      console.log();
       try {
         const Home = await getArticle('sport');
         setData(Home);
@@ -40,6 +41,7 @@ const Forside = () => {
         <Lead lead={data?.lead} />
         <Cards>
           {data?.cards?.length > 0 &&
+            // eslint-disable-next-line react/jsx-props-no-spreading
             data.cards.map((card) => <Card key={card._key} {...card} />)}
         </Cards>
       </Container>

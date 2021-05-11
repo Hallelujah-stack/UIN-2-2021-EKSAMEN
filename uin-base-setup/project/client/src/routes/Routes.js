@@ -32,11 +32,11 @@ const Routes = () => (
         <Route exact path="/Kontakt">
           <Contact />
         </Route>
-        <Route exact path="/Article/:slug">
-          <ArtikkelSide />
-        </Route>
         <Route exact path="/Kontakt">
           <Contact />
+        </Route>
+        <Route exact path="/article/:slug">
+          <ArtikkelSide />
         </Route>
       </Switch>
     </DefaultLayout>

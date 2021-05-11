@@ -3,7 +3,7 @@ import Card from '../components/Card';
 import Cards from '../components/Cards';
 import Lead from '../components/Lead';
 import Title from '../components/Title';
-import { Container, ScreenStyle, TitleH1 } from '../styles/Styles';
+import { Container, ScreenStyle } from '../styles/Styles';
 import Screen from '../components/Screen';
 import { getArticle } from '../utils/articleService';
 
@@ -32,13 +32,10 @@ const GlobalN = () => {
 
   return (
     <Container>
-      <TitleH1>
-        <h1>Global nyheter</h1>
-      </TitleH1>
+      <Title title={data?.title} />
       <ScreenStyle>
         <Screen />
       </ScreenStyle>
-      <Title title={data?.title} />
       <Lead lead={data?.lead} />
       <Cards>
         {data?.cards?.length > 0 &&

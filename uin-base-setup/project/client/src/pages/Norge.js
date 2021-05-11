@@ -3,8 +3,9 @@ import Card from '../components/Card';
 import Cards from '../components/Cards';
 import Lead from '../components/Lead';
 import Title from '../components/Title';
-import { Container } from '../styles/Styles';
+import { Container, ScreenStyle } from '../styles/Styles';
 import { getArticle } from '../utils/articleService';
+import Screen from '../components/Screen';
 
 const NorgeN = () => {
   const [data, setData] = useState(null);
@@ -32,6 +33,9 @@ const NorgeN = () => {
   return (
     <Container>
       <Title title={data?.title} />
+      <ScreenStyle>
+        <Screen />
+      </ScreenStyle>
       <Lead lead={data?.lead} />
       <Cards>
         {data?.cards?.length > 0 &&

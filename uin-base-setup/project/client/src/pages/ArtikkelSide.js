@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Container } from '../styles/Styles';
-import Cards from '../components/Cards';
-import Card from '../components/Card';
 import Lead from '../components/Lead';
 import Title from '../components/Title';
 import { getArticle } from '../utils/articleService';
@@ -36,11 +34,6 @@ const ArtikkelSide = () => {
       <Container>
         <Title title={data?.title} />
         <Lead lead={data?.lead} />
-        <Cards>
-          {data?.cards?.length > 0 &&
-            // eslint-disable-next-line react/jsx-props-no-spreading
-            data.cards.map((card) => <Card key={card._key} {...card} />)}
-        </Cards>
       </Container>
     </>
   );
