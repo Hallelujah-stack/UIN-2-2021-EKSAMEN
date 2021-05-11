@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Container, ScreenStyle, TitleH1 } from '../styles/Styles';
-import Screen from '../components/Screen';
 import Cards from '../components/Cards';
 import Card from '../components/Card';
 import Lead from '../components/Lead';
