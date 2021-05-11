@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Contact from '../pages/Kontakt';
 import Navigation from '../components/Navigation';
 import DefaultLayout from '../layouts/DefaultLayout';
-import ArtikkelSide from '../pages/ArtikkelSide';
 import Forside from '../pages/Forside';
 import GlobalN from '../pages/Global';
 import NorgeN from '../pages/Norge';
@@ -37,7 +36,7 @@ const Routes = () => (
           <ArtikkelSide />
         </Route>
         <Route exact path="/Kontakt">
-          <ContactForm />
+          <Contact />
         </Route>
       </Switch>
     </DefaultLayout>
