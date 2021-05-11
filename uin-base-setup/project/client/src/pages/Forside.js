@@ -15,6 +15,7 @@ const Forside = () => {
   useEffect(() => {
     const fetchDataAsync = async () => {
       setLoading(true);
+      console.log();
       try {
         const Home = await getArticle('sport');
         setData(Home);
