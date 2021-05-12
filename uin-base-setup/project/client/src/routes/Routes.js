@@ -7,6 +7,7 @@ import NorgeN from '../pages/Norge';
 import SportN from '../pages/Sport';
 import VGTV from '../pages/VGTV';
 import ArtikkelSide from '../pages/ArtikkelSide';
+import OmOssN from '../pages/OmOss';
 import Contact from '../pages/Kontakt';
 
 const Routes = () => (
@@ -31,6 +32,9 @@ const Routes = () => (
         </Route>
         <Route exact path="/VGTV">
           <VGTV />
+        </Route>
+        <Route exact path="/Om-Oss">
+          <OmOssN />
         </Route>
         <Route exact path="/VGTV/:slug">
           <ArtikkelSide />
