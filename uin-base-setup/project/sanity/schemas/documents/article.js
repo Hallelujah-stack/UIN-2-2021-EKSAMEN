@@ -44,7 +44,7 @@ const article = {
                 hotspot: true
         },
     }
-    ]
+    ],
 }
 
 export default article;

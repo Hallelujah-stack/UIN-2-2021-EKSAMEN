@@ -5,7 +5,6 @@ import { getArticle } from '../utils/articleService';
 import Lead from '../components/Lead';
 import Title from '../components/Title';
 
-
 const ArtikkelSideN = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);

@@ -22,6 +22,10 @@ const navItems = [
     name: 'Kontakt Oss',
     href: '/Kontakt',
   },
+  {
+    name: 'Om Oss',
+    href: '/Om-oss',
+  },
 ];
 
 const StyledNav = styled.nav`

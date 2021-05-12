@@ -24,11 +24,3 @@ export const ScreenStyle = styled.section`
   border-radius: 10px;
   box-shadow: 2px 2px rgb(255, 245, 238);
 `;
-export const TitleH1 = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 10px;
-  font-family: Arial, sans-serif;
-`;
