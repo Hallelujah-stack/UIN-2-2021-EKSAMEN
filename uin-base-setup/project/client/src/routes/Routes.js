@@ -37,6 +37,9 @@ const Routes = () => (
         <Route exact path="/Om-Oss">
           <OmOssN />
         </Route>
+        <Route exact path="/Om-oss/:slug">
+          <ArtikkelSide />
+        </Route>
         <Route exact path="/VGTV/:slug">
           <ArtikkelSide />
         </Route>
