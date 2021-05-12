@@ -26,13 +26,6 @@ const StyledDiv3 = styled.div`
   margin-right: 20px;
 `;
 
-const StyledDd = styled.dd`
-  display: inline-block;
-  margin-bottom: 8px;
-  margin-bottom: var(--space-sm, 8px);
-  color: white;
-`;
-
 const Footer = () => (
   <StyledDiv>
     <StyledDiv3>

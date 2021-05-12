@@ -9,6 +9,7 @@ import VGTV from '../pages/VGTV';
 import ArtikkelSide from '../pages/ArtikkelSide';
 import Footer from '../components/Footer';
 import OmOssN from '../pages/OmOss';
+import Contact from '../pages/Kontakt';
 
 const Routes = () => (
   <Router>
@@ -44,6 +45,12 @@ const Routes = () => (
         </Route>
         <Route exact path="/Sport">
           <SportN />
+        </Route>
+        <Route exact path="/Sport/:slug">
+          <ArtikkelSide />
+        </Route>
+        <Route exact path="/Kontakt">
+          <Contact />
         </Route>
       </Switch>
       <Footer />
