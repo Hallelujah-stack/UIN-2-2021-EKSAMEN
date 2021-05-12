@@ -46,11 +46,14 @@ const Routes = () => (
         <Route exact path="/Sport">
           <SportN />
         </Route>
+        <Route exact path="/Sport/:slug">
+          <ArtikkelSide />
+        </Route>
         <Route exact path="/Kontakt">
           <Contact />
         </Route>
       </Switch>
-      < Footer />
+      <Footer />
     </DefaultLayout>
   </Router>
 );
