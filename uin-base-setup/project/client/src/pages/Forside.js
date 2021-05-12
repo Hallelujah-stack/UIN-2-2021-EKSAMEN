@@ -17,7 +17,7 @@ const Forside = () => {
       setLoading(true);
       console.log();
       try {
-        const Home = await getArticle('sport');
+        const Home = await getArticle('home');
         setData(Home);
       } catch (error) {
         setError(error);
