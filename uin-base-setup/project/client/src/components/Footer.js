@@ -23,13 +23,6 @@ const StyledDt = styled.dt`
   color: white;
 `;
 
-const StyledDd = styled.dd`
-  display: inline-block;
-  margin-bottom: 8px;
-  margin-bottom: var(--space-sm, 8px);
-  color: white;
-`;
-
 const Footer = () => (
   <StyledDiv>
     <div>

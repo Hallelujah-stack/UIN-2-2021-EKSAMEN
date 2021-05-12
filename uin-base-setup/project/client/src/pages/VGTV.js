@@ -7,9 +7,8 @@ import Lead from '../components/Lead';
 import Title from '../components/Title';
 import { getArticle } from '../utils/articleService';
 
-
 const VgtvN = () => {
-  const {pathname} = useLocation();
+  const { pathname } = useLocation();
   const slug = pathname.split('/');
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -28,7 +27,7 @@ const VgtvN = () => {
       }
     };
     fetchDataAsync();
-  }, []);
+  }, [pathname]);
 
   if (loading) return <p>Loading ...</p>;
   if (!data && error) return <p>{error?.message}</p>;

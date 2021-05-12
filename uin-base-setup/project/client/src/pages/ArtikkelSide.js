@@ -2,11 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container } from '../styles/Styles';
 import { getArticle } from '../utils/articleService';
-import Cards from '../components/Cards';
-import Card from '../components/Card';
 import Lead from '../components/Lead';
 import Title from '../components/Title';
-
 
 const ArtikkelSideN = () => {
   const [data, setData] = useState(null);
