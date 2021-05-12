@@ -7,6 +7,7 @@ import NorgeN from '../pages/Norge';
 import SportN from '../pages/Sport';
 import VGTV from '../pages/VGTV';
 import ArtikkelSide from '../pages/ArtikkelSide';
+import Footer from '../components/Footer';
 import OmOssN from '../pages/OmOss';
 
 const Routes = () => (
@@ -45,6 +46,7 @@ const Routes = () => (
           <SportN />
         </Route>
       </Switch>
+      <Footer />
     </DefaultLayout>
   </Router>
 );

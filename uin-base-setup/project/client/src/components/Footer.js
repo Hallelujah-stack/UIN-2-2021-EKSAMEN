@@ -1,26 +1,29 @@
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  background-color: #2b2b2b;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    margin-top: 100px;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    & p {
+        color: white;
+        text-decoration: none;
+        padding: .5rem
 `;
 
-const StyledDl = styled.dl`
-  margin: 0;
-  font-size: 13px;
-  font-size: var(--text-xs, 13px);
-  line-height: 1.5;
-  margin-bottom: 8px;
-  margin-bottom: var(--space-sm, 8px);
+const StyledDiv2 = styled.div`
+  margin-left: 20px;
+  margin-right: 20px;
 `;
 
-const StyledDt = styled.dt`
-  display: inline-block;
-  margin-bottom: 8px;
-  margin-bottom: var(--space-sm, 8px);
-  color: white;
+const StyledDiv3 = styled.div`
+  margin-left: 500px;
+  margin-right: 20px;
 `;
 
 const StyledDd = styled.dd`
@@ -32,14 +35,23 @@ const StyledDd = styled.dd`
 
 const Footer = () => (
   <StyledDiv>
-    <div>
-      <StyledDl aria-label="Kontakt Redaktørene">
-        <StyledDt aria-label="Ansvarlig redaktør og administrerende direktør">
-          "Ansv. redaktør og adm. direktør"
-        </StyledDt>
-        <dd>Gard Steiro</dd>
-      </StyledDl>
-    </div>
+    <StyledDiv3>
+      <p>Ansv. redaktør og adm. direktør: Gard Steiro</p>
+      <p>Nyhetsredaktør: Tora Bakke Håndlykken</p>
+      <p>Utviklingsredaktør: Øyvind Brenne</p>
+      <p>Redaktør Feature/VG+: Jane Throndsen</p>
+      <p>Politisk redaktør: Hanne Skartveit</p>
+    </StyledDiv3>
+    <StyledDiv2>
+      <p>Tips oss på: 22 00 00 00 eller SMS 2200</p>
+      <p>E-post til tusentipset: 2200@vg.no</p>
+      <p>
+        VG har ikke ansvar for innhold på eksterne nettsider
+        <br />
+        som det lenkes til. Kopiering av materiale fra VG for
+        <br /> bruk annet sted er ikke tillatt uten avtale.
+      </p>
+    </StyledDiv2>
   </StyledDiv>
 );
 
