@@ -6,6 +6,7 @@ const StyledDiv = styled.div`
     text-align: center;
     align-items: center;
     background-color: #2b2b2b;
+    margin-top: 100px;
     bottom: 0;
     width: 100%;
     padding: 1rem;

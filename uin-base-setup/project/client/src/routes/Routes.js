@@ -50,8 +50,8 @@ const Routes = () => (
           <Contact />
         </Route>
       </Switch>
+      <Footer />
     </DefaultLayout>
-    <Footer />
   </Router>
 );
 
