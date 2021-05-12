@@ -27,7 +27,7 @@ const OmOssN = () => {
       }
     };
     fetchDataAsync();
-  }, []);
+  });
 
   if (loading) return <p>Loading ...</p>;
   if (!data && error) return <p>{error?.message}</p>;
