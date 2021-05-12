@@ -7,7 +7,6 @@ const StyledDiv = styled.div`
     align-items: center;
     background-color: #2b2b2b;
     bottom: 0;
-    position: absolute;
     width: 100%;
     padding: 1rem;
     & p {
