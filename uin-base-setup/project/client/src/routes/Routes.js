@@ -21,8 +21,14 @@ const Routes = () => (
         <Route exact path="/Global">
           <GlobalN />
         </Route>
+        <Route exact path="/Global/:slug">
+          <ArtikkelSide />
+        </Route>
         <Route exact path="/Nasjonal">
           <NorgeN />
+        </Route>
+        <Route exact path="/Nasjonal/:slug">
+          <ArtikkelSide />
         </Route>
         <Route exact path="/VGTV">
           <VGTV />

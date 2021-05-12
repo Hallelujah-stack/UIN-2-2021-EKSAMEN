@@ -27,7 +27,7 @@ const VgtvN = () => {
       }
     };
     fetchDataAsync();
-  }, []);
+  }, [pathname]);
 
   if (loading) return <p>Loading ...</p>;
   if (!data && error) return <p>{error?.message}</p>;

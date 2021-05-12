@@ -24,6 +24,6 @@ export default createSchema({
     link,
     cards,
     content, 
-    contact
+    contact, 
   ]),
 })
