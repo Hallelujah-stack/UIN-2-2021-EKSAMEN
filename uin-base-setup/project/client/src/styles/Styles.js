@@ -5,6 +5,7 @@ export const Container = styled.section`
   padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
+  min-height: 100%;
   @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
     width: 1160px;
   }

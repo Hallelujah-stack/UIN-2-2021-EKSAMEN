@@ -7,7 +7,8 @@ import GlobalN from '../pages/Global';
 import NorgeN from '../pages/Norge';
 import SportN from '../pages/Sport';
 import VGTV from '../pages/VGTV';
-import ArtikkelSideN from '../pages/ArtikkelSide';
+import ArtikkelSide from '../pages/ArtikkelSide';
+import Footer from '../components/Footer';
 
 const Routes = () => (
   <Router>
@@ -27,7 +28,7 @@ const Routes = () => (
           <VGTV />
         </Route>
         <Route exact path="/VGTV/:slug">
-          <ArtikkelSideN />
+          <ArtikkelSide />
         </Route>
         <Route exact path="/Sport">
           <SportN />
@@ -40,6 +41,7 @@ const Routes = () => (
         </Route>
       </Switch>
     </DefaultLayout>
+    <Footer />
   </Router>
 );
 
