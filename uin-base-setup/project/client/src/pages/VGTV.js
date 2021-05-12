@@ -27,10 +27,10 @@ const VgtvN = () => {
       }
     };
     fetchDataAsync();
-  }, [pathname]);
+  });
 
-  if (loading) return <p>Loading ...</p>;
-  if (!data && error) return <p>{error?.message}</p>;
+  if (!data && error) return <div>Noe gikk galt ...</div>;
+  if (!data && loading) return <div>Loading ... </div>;
 
   return (
     <>
